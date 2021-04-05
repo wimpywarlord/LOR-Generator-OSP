@@ -283,7 +283,7 @@
 				<div class="quixnav-scroll">
 					<ul class="metismenu" id="menu">
 						<li class="nav-label first">Main Menu</li>
-						<li>
+						<li data-toggle="modal" data-target="#exampleModal">
 							<a
 								class="has-arrow"
 								href="javascript:void()"
@@ -386,7 +386,25 @@
 										<div
 											id="cpu-load"
 											class="cpu-load"
-										></div>
+										>
+										<% if(yes_bank == "T"){%>
+											<a href="/temp1">
+												<div>
+													1
+												</div>
+											</a>
+											<a href="/temp2">
+												<div>
+													2
+												</div>
+											</a>
+											<a href="/temp3">
+												<div>
+													3
+												</div>
+											</a>
+										<%}%>
+									</div>
 									</div>
 								</div>
 							</div>
@@ -705,6 +723,57 @@
         Main wrapper end
     ***********************************-->
 
+	<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body" style="color: black;">
+			<form action="/lor" method="POST">
+				<div class="form-row">
+				  <div class="form-group col-md-6">
+					<label for="name">What is your name</label>
+					<input name="name" type="text" class="form-control" id="name" placeholder="Kshitij Dhyani">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label for="school">What is your School of study in VIT?</label>
+				  <input  name="school" type="text" class="form-control" id="school" placeholder="School of Information Technology and Engineering">
+				</div>
+				<div class="form-group">
+				  <label for="year">What is your Year of Graduation?</label>
+				  <input  name="year" type="text" class="form-control" id="year" placeholder="Eg: 2022">
+				</div>
+
+				  <div class="form-group">
+					<label for="program">What is the program you are applying for?</label>
+					<input  name="program" type="text" class="form-control" id="program" placeholder="Masters in Computer Science and Engineering">
+				  </div>
+
+					<div class="form-group">
+						<label for="univ">What is the university you are applying for? </label>
+						<input name = "univ" type="text" class="form-control" id="univ" placeholder="University of Texas at Austin">
+					  </div>
+
+				<div class="form-group">
+				  <div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck">
+					<label class="form-check-label" for="gridCheck">
+						I have read the terms and conditions. 
+					</label>
+				  </div>
+				</div>
+				<button type="submit" class="btn btn-primary">Generate LOR</button>
+			  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
 		<!--**********************************
         Scripts
     ***********************************-->
@@ -735,6 +804,7 @@
 		<script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
 
 		<script src="js/dashboard/dashboard-1.js"></script>
+		
 	</body>
 
 	<!-- Mirrored from demo.themefisher.com/focus/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Mar 2021 20:23:20 GMT -->
