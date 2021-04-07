@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Mirrored from demo.themefisher.com/focus/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Mar 2021 20:23:02 GMT -->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Focus - Bootstrap Admin Dashboard</title>
+		<!-- Favicon icon -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicon.png"
+		/>
+		<link
+			rel="stylesheet"
+			href="vendor/owl-carousel/css/owl.carousel.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="vendor/owl-carousel/css/owl.theme.default.min.css"
+		/>
+		<link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<style>
+			.box_1_lor
+			{
+				height: 150px;
+				width: 190px;
+				border: wheat 5px solid;
+				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--*******************
+        Preloader start
+    ********************-->
+		<div id="preloader">
+			<div class="sk-three-bounce">
+				<div class="sk-child sk-bounce1"></div>
+				<div class="sk-child sk-bounce2"></div>
+				<div class="sk-child sk-bounce3"></div>
+			</div>
+		</div>
+		<!--*******************
+        Preloader end
+    ********************-->
+
+		<!--**********************************
+        Main wrapper start
+    ***********************************-->
+		<div id="main-wrapper">
+			<!--**********************************
+            Nav header start
+        ***********************************-->
+			<div class="nav-header">
+				<a href="index-2.html" class="brand-logo">
+					<img class="logo-abbr" src="images/logo.png" alt="" />
+					<img
+						class="logo-compact"
+						src="images/logo-text.png"
+						alt=""
+					/>
+					<img
+						class="brand-title"
+						src="images/logo-text.png"
+						alt=""
+					/>
+				</a>
+
+				<div class="nav-control">
+					<div class="hamburger">
+						<span class="line"></span><span class="line"></span
+						><span class="line"></span>
+					</div>
+				</div>
+			</div>
+			<!--**********************************
+            Nav header end
+        ***********************************-->
+
+			<!--**********************************
+            Header start
+        ***********************************-->
+			<div class="header">
+				<div class="header-content">
+					<nav class="navbar navbar-expand">
+						<div
+							class="collapse navbar-collapse justify-content-between"
+						>
+							<div class="header-left">
+								<div class="search_bar dropdown">
+									<span
+										class="search_icon p-3 c-pointer"
+										data-toggle="dropdown"
+									>
+										<i class="mdi mdi-magnify"></i>
+									</span>
+									<div class="dropdown-menu p-0 m-0">
+										<form>
+											<input
+												class="form-control"
+												type="search"
+												placeholder="Search"
+												aria-label="Search"
+											/>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<ul class="navbar-nav header-right">
+								<li
+									class="nav-item dropdown notification_dropdown"
+								>
+									<a
+										class="nav-link"
+										href="#"
+										role="button"
+										data-toggle="dropdown"
+									>
+										<i class="mdi mdi-bell"></i>
+										<div class="pulse-css"></div>
+									</a>
+									<div
+										class="dropdown-menu dropdown-menu-right"
+									>
+										<ul class="list-unstyled">
+											<li class="media dropdown-item">
+												<span class="success"
+													><i class="ti-user"></i
+												></span>
+												<div class="media-body">
+													<a href="#">
+														<p>
+															<strong
+																>Martin</strong
+															>
+															has added a
+															<strong
+																>customer</strong
+															>
+															Successfully
+														</p>
+													</a>
+												</div>
+												<span class="notify-time"
+													>3:20 am</span
+												>
+											</li>
+											<li class="media dropdown-item">
+												<span class="primary"
+													><i
+														class="ti-shopping-cart"
+													></i
+												></span>
+												<div class="media-body">
+													<a href="#">
+														<p>
+															<strong
+																>Jennifer</strong
+															>
+															purchased Light
+															Dashboard 2.0.
+														</p>
+													</a>
+												</div>
+												<span class="notify-time"
+													>3:20 am</span
+												>
+											</li>
+											<li class="media dropdown-item">
+												<span class="danger"
+													><i class="ti-bookmark"></i
+												></span>
+												<div class="media-body">
+													<a href="#">
+														<p>
+															<strong
+																>Robin</strong
+															>
+															marked a
+															<strong
+																>ticket</strong
+															>
+															as unsolved.
+														</p>
+													</a>
+												</div>
+												<span class="notify-time"
+													>3:20 am</span
+												>
+											</li>
+											<li class="media dropdown-item">
+												<span class="primary"
+													><i class="ti-heart"></i
+												></span>
+												<div class="media-body">
+													<a href="#">
+														<p>
+															<strong
+																>David</strong
+															>
+															purchased Light
+															Dashboard 1.0.
+														</p>
+													</a>
+												</div>
+												<span class="notify-time"
+													>3:20 am</span
+												>
+											</li>
+											<li class="media dropdown-item">
+												<span class="success"
+													><i class="ti-image"></i
+												></span>
+												<div class="media-body">
+													<a href="#">
+														<p>
+															<strong>
+																James.</strong
+															>
+															has added a<strong
+																>customer</strong
+															>
+															Successfully
+														</p>
+													</a>
+												</div>
+												<span class="notify-time"
+													>3:20 am</span
+												>
+											</li>
+										</ul>
+										<a class="all-notification" href="#"
+											>See all notifications
+											<i class="ti-arrow-right"></i
+										></a>
+									</div>
+								</li>
+								<li class="nav-item dropdown header-profile">
+									<a
+										class="nav-link"
+										href="#"
+										role="button"
+										data-toggle="dropdown"
+									>
+										<i class="mdi mdi-account"></i>
+									</a>
+									<div
+										class="dropdown-menu dropdown-menu-right"
+									>
+										<a
+											href="app-profile.html"
+											class="dropdown-item"
+										>
+											<i class="icon-user"></i>
+											<span class="ml-2">Profile </span>
+										</a>
+										<a
+											href="email-inbox.html"
+											class="dropdown-item"
+										>
+											<i class="icon-envelope-open"></i>
+											<span class="ml-2">Inbox </span>
+										</a>
+										<a
+											href="page-login.html"
+											class="dropdown-item"
+										>
+											<i class="icon-key"></i>
+											<span class="ml-2">Logout </span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+			<!--**********************************
+            Sidebar start
+        ***********************************-->
+			<div class="quixnav">
+				<div class="quixnav-scroll">
+					<ul class="metismenu" id="menu">
+						<li class="nav-label first">Main Menu</li>
+						<li data-toggle="modal" data-target="#exampleModal">
+							<a
+								class="has-arrow"
+								href="javascript:void()"
+								aria-expanded="false"
+								><i class="icon icon-single-04"></i
+								><span class="nav-text">Create</span></a
+							>
+							<!-- <ul aria-expanded="false">
+								<li><a href="index-2.html">Dashboard 1</a></li>
+								<li><a href="index2.html">Dashboard 2</a></li>
+							</ul> -->
+						</li>
+						<li class="nav-label">Editing</li>
+						<li>
+							<a
+								class="has-arrow"
+								href="javascript:void()"
+								aria-expanded="false"
+								><i class="icon icon-app-store"></i
+								><span class="nav-text">Edit</span></a
+							>
+							<ul aria-expanded="false">
+								<li><a href="app-profile.html">Remix</a></li>
+								<li>
+									<a
+										class="has-arrow"
+										href="javascript:void()"
+										aria-expanded="false"
+										>Design</a
+									>
+								</li>
+								<li>
+									<a href="app-calender.html">Layout</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a
+								class="has-arrow"
+								href="javascript:void()"
+								aria-expanded="false"
+								><i class="icon icon-chart-bar-33"></i
+								><span class="nav-text">Profile</span></a
+							>
+							<ul aria-expanded="false">
+								<li><a href="chart-flot.html">Your Templates</a></li>
+								<li><a href="chart-morris.html">Account Info</a></li>
+							</ul>
+						</li>
+						<li class="nav-label">Share</li>
+						<li>
+							<a
+								class="has-arrow"
+								href="javascript:void()"
+								aria-expanded="false"
+								><i class="icon icon-single-copy-06"></i
+								><span class="nav-text">Print & Share</span></a
+							>
+							<ul aria-expanded="false">
+								<li>
+									<a href="page-register.html">Facebook</a>
+								</li>
+								<li><a href="page-login.html">Email</a></li>
+								<li>
+									<a
+										href="javascript:void()"
+										aria-expanded="false"
+										>Whatsapp</a
+									>
+								</li>
+								<li>
+									<a href="page-lock-screen.html"
+										>Telegram</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--**********************************
+            Sidebar end
+        ***********************************-->
+
+			<!--**********************************
+            Content body start
+        ***********************************-->
+			<div class="content-body">
+				<!-- row -->
+				<div class="container-fluid">
+						<!-- /# column -->
+					</div>
+						<div class="col-lg-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">LoR template</h4>
+								</div>
+								<div class="card-body ">
+									<div class="cpu-load-chart">
+										<div
+											id="cpu-load"
+											class="cpu-load row"
+										>
+										<% if(yes_bank == "T"){%>
+											<div class="col-4">
+												<a href="/temp1">
+													<div class="box_1_lor">
+														LOR TEMPLATE NUMBER 1
+													</div>
+												</a>
+											</div>
+											<div class="col-4">
+												<a href="/temp2">
+													<div class="box_1_lor">
+														LOR TEMPLATE NUMBER 2
+													</div>
+												</a>
+											</div>
+											<div class="col-4">
+												<a href="/temp3">
+													<div class="box_1_lor">
+														LOR TEMPLATE NUMBER 3
+													</div>
+												</a>
+											</div>											
+										<%}%>
+									</div>
+									</div>
+								</div>
+							</div>
+							<!-- /# card -->
+						</div>
+						<div
+							class="col-xl-4 col-xxl-6 col-lg-6 col-md-6 col-sm-12"
+						>
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Todo</h4>
+								</div>
+								<div class="card-body px-0">
+									<div class="todo-list">
+										<div class="tdl-holder">
+											<div
+												class="tdl-content widget-todo mr-4"
+											>
+												<ul id="todo_list">
+													<li>
+														<label
+															><input
+																type="checkbox" /><i></i
+															><span>Get up</span
+															><a
+																href="#"
+																class="ti-trash"
+															></a
+														></label>
+													</li>
+													<li>
+														<label
+															><input
+																type="checkbox"
+																checked /><i></i
+															><span
+																>Stand up</span
+															><a
+																href="#"
+																class="ti-trash"
+															></a
+														></label>
+													</li>
+													<li>
+														<label
+															><input
+																type="checkbox" /><i></i
+															><span
+																>Don't give up
+																the fight.</span
+															><a
+																href="#"
+																class="ti-trash"
+															></a
+														></label>
+													</li>
+													<li>
+														<label
+															><input
+																type="checkbox"
+																checked /><i></i
+															><span
+																>Do something
+																else</span
+															><a
+																href="#"
+																class="ti-trash"
+															></a
+														></label>
+													</li>
+													<li>
+														<label
+															><input
+																type="checkbox"
+																checked /><i></i
+															><span
+																>Stand up</span
+															><a
+																href="#"
+																class="ti-trash"
+															></a
+														></label>
+													</li>
+													<li>
+														<label
+															><input
+																type="checkbox" /><i></i
+															><span
+																>Don't give up
+																the fight.</span
+															><a
+																href="#"
+																class="ti-trash"
+															></a
+														></label>
+													</li>
+												</ul>
+											</div>
+											<div class="px-4">
+												<input
+													type="text"
+													class="tdl-new form-control"
+													placeholder="Write new item and hit 'Enter'..."
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-sm-12 col-md-12 col-xxl-6 col-xl-4 col-lg-6"
+						>
+						</div>
+						<div class="col-xl-12 col-xxl-6 col-lg-6 col-md-12">
+							<div class="row">
+								<div
+									class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6"
+								>
+									<div class="card">
+										<div
+											class="social-graph-wrapper widget-facebook"
+										>
+											<span class="s-icon"
+												><i class="fa fa-facebook"></i
+											></span>
+										</div>
+										<div class="row">
+											<div class="col-6 border-right">
+												<div
+													class="pt-3 pb-3 pl-0 pr-0 text-center"
+												>
+													<h4 class="m-1">
+														<span class="counter"
+															>89</span
+														>
+														k
+													</h4>
+													<p class="m-0">Friends</p>
+												</div>
+											</div>
+											<div class="col-6">
+												<div
+													class="pt-3 pb-3 pl-0 pr-0 text-center"
+												>
+													<h4 class="m-1">
+														<span class="counter"
+															>119</span
+														>
+														k
+													</h4>
+													<p class="m-0">Followers</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6"
+								>
+									<div class="card">
+										<div
+											class="social-graph-wrapper widget-linkedin"
+										>
+											<span class="s-icon"
+												><i class="fa fa-linkedin"></i
+											></span>
+										</div>
+										<div class="row">
+											<div class="col-6 border-right">
+												<div
+													class="pt-3 pb-3 pl-0 pr-0 text-center"
+												>
+													<h4 class="m-1">
+														<span class="counter"
+															>89</span
+														>
+														k
+													</h4>
+													<p class="m-0">Friends</p>
+												</div>
+											</div>
+											<div class="col-6">
+												<div
+													class="pt-3 pb-3 pl-0 pr-0 text-center"
+												>
+													<h4 class="m-1">
+														<span class="counter"
+															>119</span
+														>
+														k
+													</h4>
+													<p class="m-0">Followers</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6"
+								>
+									<div class="card">
+										<div
+											class="social-graph-wrapper widget-googleplus"
+										>
+											<span class="s-icon"
+												><i
+													class="fa fa-google-plus"
+												></i
+											></span>
+										</div>
+										<div class="row">
+											<div class="col-6 border-right">
+												<div
+													class="pt-3 pb-3 pl-0 pr-0 text-center"
+												>
+													<h4 class="m-1">
+														<span class="counter"
+															>89</span
+														>
+														k
+													</h4>
+													<p class="m-0">Friends</p>
+												</div>
+											</div>
+											<div class="col-6">
+												<div
+													class="pt-3 pb-3 pl-0 pr-0 text-center"
+												>
+													<h4 class="m-1">
+														<span class="counter"
+															>119</span
+														>
+														k
+													</h4>
+													<p class="m-0">Followers</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6"
+								>
+									<div class="card">
+										<div
+											class="social-graph-wrapper widget-twitter"
+										>
+											<span class="s-icon"
+												><i class="fa fa-twitter"></i
+											></span>
+										</div>
+										<div class="row">
+											<div class="col-6 border-right">
+												<div
+													class="pt-3 pb-3 pl-0 pr-0 text-center"
+												>
+													<h4 class="m-1">
+														<span class="counter"
+															>89</span
+														>
+														k
+													</h4>
+													<p class="m-0">Friends</p>
+												</div>
+											</div>
+											<div class="col-6">
+												<div
+													class="pt-3 pb-3 pl-0 pr-0 text-center"
+												>
+													<h4 class="m-1">
+														<span class="counter"
+															>119</span
+														>
+														k
+													</h4>
+													<p class="m-0">Followers</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--**********************************
+            Content body end
+        ***********************************-->
+
+			<!--**********************************
+            Footer start
+        ***********************************-->
+			<div class="footer">
+				<div class="copyright">
+					<p>
+						Copyright © Designed &amp; Developed by
+						<a href="#" target="_blank">Kshitij Team</a> 2021
+					</p>
+				</div>
+			</div>
+			<!--**********************************
+            Footer end
+        ***********************************-->
+
+			<!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+			<!--**********************************
+           Support ticket button end
+        ***********************************-->
+		</div>
+		<!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+	<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body" style="color: black;">
+			<form action="/lor" method="POST">
+				<div class="form-row">
+				  <div class="form-group col-md-6">
+					<label for="name">What is your name</label>
+					<input name="name" type="text" class="form-control" id="name" placeholder="Kshitij Dhyani">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label for="school">What is your School of study in VIT?</label>
+				  <input  name="school" type="text" class="form-control" id="school" placeholder="School of Information Technology and Engineering">
+				</div>
+				<div class="form-group">
+				  <label for="year">What is your Year of Graduation?</label>
+				  <input  name="year" type="text" class="form-control" id="year" placeholder="Eg: 2022">
+				</div>
+
+				  <div class="form-group">
+					<label for="program">What is the program you are applying for?</label>
+					<input  name="program" type="text" class="form-control" id="program" placeholder="Masters in Computer Science and Engineering">
+				  </div>
+
+					<div class="form-group">
+						<label for="univ">What is the university you are applying for? </label>
+						<input name = "univ" type="text" class="form-control" id="univ" placeholder="University of Texas at Austin">
+					  </div>
+
+				<div class="form-group">
+				  <div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck">
+					<label class="form-check-label" for="gridCheck">
+						I have read the terms and conditions. 
+					</label>
+				  </div>
+				</div>
+				<button type="submit" class="btn btn-primary">Generate LOR</button>
+			  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
+		<!--**********************************
+        Scripts
+    ***********************************-->
+		<!-- Required vendors -->
+		<script src="vendor/global/global.min.js"></script>
+		<script src="js/quixnav-init.js"></script>
+		<script src="js/custom.min.js"></script>
+
+		<!-- Vectormap -->
+		<script src="vendor/raphael/raphael.min.js"></script>
+		<script src="vendor/morris/morris.min.js"></script>
+
+		<script src="vendor/circle-progress/circle-progress.min.js"></script>
+		<script src="vendor/chart.js/Chart.bundle.min.js"></script>
+
+		<script src="vendor/gaugeJS/dist/gauge.min.js"></script>
+
+		<!--  flot-chart js -->
+		<script src="vendor/flot/jquery.flot.js"></script>
+		<script src="vendor/flot/jquery.flot.resize.js"></script>
+
+		<!-- Owl Carousel -->
+		<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+		<!-- Counter Up -->
+		<script src="vendor/jqvmap/js/jquery.vmap.min.js"></script>
+		<script src="vendor/jqvmap/js/jquery.vmap.usa.js"></script>
+		<script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
+
+		<script src="js/dashboard/dashboard-1.js"></script>
+		
+	</body>
+
+	<!-- Mirrored from demo.themefisher.com/focus/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Mar 2021 20:23:20 GMT -->
+</html>
