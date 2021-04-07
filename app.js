@@ -114,7 +114,7 @@ app.get("/temp1", async (req, res) => {
       } else {
           console.log("Stream Data successfully fetched.")
           console.log(response[0])
-        res.render("./temp1.ejs", {
+        res.render("./temp2.ejs", {
           name: response[0].name,
           school:  response[0].school,
           year:  response[0].year,
@@ -137,7 +137,7 @@ app.get("/temp1", async (req, res) => {
       } else {
           console.log("Stream Data successfully fetched.")
           console.log(response[0])
-        res.render("./temp1.ejs", {
+        res.render("./temp3.ejs", {
           name: response[0].name,
           school:  response[0].school,
           year:  response[0].year,
