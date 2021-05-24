@@ -1,59 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<style>
-			body {
-				background-image: url("/images/certi3.jpg");
-				background-color: #cccccc;
-				object-fit: contain;
-			}
-		</style>
-	</head>
-	<body id="print-content">
-		<pre style="color: white; margin-top: 10rem">
-			With immense pleasure, 
-			
-			I am writing this reference letter in support of <b style="font-size: 1rem;"> <%=name%>  
-			</b>from <b> <%=school%> </b> who is applying to the <b> <%=program%> </b>at 
-			your esteemed <b> <%=univ%> </b>for the academic year <%=year%>. 
-			I have known <b> <%=name%> </b> in my capacity as his Professor for over three years now during which, 
-			I taught him the courses of 'Thermodynamics', 'Heat and Mass Transfer', 'Renewable Sources of Energy' and 'Advanced IC Engines' in the first, fourth, 
-			fifth and sixth semesters, respectively. 
-			Through my observation, I would like to say that he/she is attentive and studious and possesses a positive attitude towards academics.
-			Throughout his course of study, Candidate Name has shown great interest in practical aided learning techniques. We engaged in several courses and research
-			related discussions in which, he/she confidently talked about his/her aspirations towards higher education. For his/her project, he/she chose the 
-			significantly complex topic of ‘Enhancing Efficiency of Screw Press Oil Expeller Roller’. Besides this, he/she has also
-			gained experience in numerous simple concepts that are highly valuable for the future generation.
-			Besides the academic record, Candidate Name's participation in MIRAGE’14, state-level project competition for Mechanical Engineering students
-			held in our college, clearly displays his/her interest in the manufacturing and creative sector. As a person who is always ready to take up 
-			responsibility, he/she carries out his/her duties with immense dedication.
-			Throughout the year Candidate Name's was an active participant in our discussions, and he/she always supported his/her peers. 
-			I am certain that Candidate Name's is going to continue to do great and creative things in future and stand-out as an individual at your school. 
-			I have the deepest personal and professional respect for him/her, and sincerely believe <b> <%=name%> </b> will bring his/her unique energy, optimism, 
-			passion, and tireless creativity to your class and University as a whole. Thus, he/she has my highest endorsement for admission into his/her desired 
-			course at your University. If you have any questions about this recommendation, please do not hesitate to contact me for I will gladly try to help.
 
-			Yours sincerely,
-			<%=name%>
-		</pre>
-		<input
-			type="button"
-			style="margin-left: 11rem"
-			value="Print this page"
-			onClick="window.print()"
-		/>
-	</body>
-	<script type="text/javascript">
-		function printDiv(divName) {
-			var printContents = document.getElementById(divName).innerHTML;
-			w = window.open();
-			w.document.write(printContents);
-			w.print();
-			w.close();
-		}
-	</script>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+        body {
+            font-family: 'Ubumtu', sans-serif;
+            background-repeat: no-repeat;
+            background-color: #734b6d;
+            color: white;
+            object-fit: contain;
+        }
+
+        h1 {
+            margin-top: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            width: 80vw;
+            margin: auto;
+            line-height: 2;
+            margin-top: 1rem;
+        }
+
+        .btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 4rem 0;
+        }
+
+        input {
+            padding: 1rem 2rem;
+            font-weight: bolder;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 1rem;
+        }
+
+        @media print {
+            .remove-btn {
+                visibility: hidden;
+            }
+
+            p {
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body id="print-content">
+    <h1>Letter of Recommendation</h1>
+    <p class="content">
+        With immense pleasure, <br>
+
+        I am writing this reference letter in support of <b> <%=name%> </b>from <b> <%=school%> </b> who is applying to
+        the <b> <%=program%> </b>at your esteemed <b> <%=univ%> </b>for the academic year <b><%=year%></b>.
+        <br> I have known <b> <%=name%> </b> in my capacity as his Professor for over three years now during which,
+        I taught him the courses of 'Thermodynamics', 'Heat and Mass Transfer', 'Renewable Sources of Energy' and
+        'Advanced IC Engines' in the first, fourth,
+        fifth and sixth semesters, respectively.
+        <br> Through my observation, I would like to say that he/she is attentive and studious and possesses a positive
+        attitude towards academics.
+        <br> Throughout his course of study, Candidate Name has shown great interest in practical aided learning
+        techniques. We engaged in several courses and research
+        related discussions in which, he/she confidently talked about his/her aspirations towards higher education. For
+        his/her project, he/she chose the
+        significantly complex topic of ‘Enhancing Efficiency of Screw Press Oil Expeller Roller’. Besides this, he/she
+        has also
+        gained experience in numerous simple concepts that are highly valuable for the future generation.
+        <br> Besides the academic record, Candidate Name's participation in MIRAGE’14, state-level project competition
+        for Mechanical Engineering students
+        held in our college, clearly displays his/her interest in the manufacturing and creative sector. As a person who
+        is always ready to take up
+        responsibility, he/she carries out his/her duties with immense dedication.
+        <br> Throughout the year Candidate Name's was an active participant in our discussions, and he/she always
+        supported his/her peers.
+        <br> I am certain that Candidate Name's is going to continue to do great and creative things in future and
+        stand-out as an individual at your school.
+        <br> I have the deepest personal and professional respect for him/her, and sincerely believe <b> <%=name%> </b>
+        will bring his/her unique energy, optimism,
+        passion, and tireless creativity to your class and University as a whole. Thus, he/she has my highest
+        endorsement for admission into his/her desired
+        course at your University. If you have any questions about this recommendation, please do not hesitate to
+        contact me for I will gladly try to help.<br>
+
+        Yours sincerely,<br>
+        <b><%=name%></b>
+    </p>
+    <div class="btn-container">
+        <input class="remove-btn" type="button" value="📩 Print this page" onClick="window.print()" />
+    </div>
+
+</body>
+<script type="text/javascript">
+    function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        w = window.open();
+        w.document.write(printContents);
+        w.print();
+        w.close();
+    }
+</script>
+
 </html>
